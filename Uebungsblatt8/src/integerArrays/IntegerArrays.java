@@ -77,7 +77,7 @@ public class IntegerArrays {
         for(int i=0; i<refArray.length/2; i++){
             int temp = refArray[i];
             refArray[i] = refArray[refArray.length -i -1];
-            refArray[refArray.length -i -1] = temp;
+            refArray[refArray.length -i -1] = Math.abs(temp);
         }
 
         return refArray;
